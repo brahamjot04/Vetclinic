@@ -1,0 +1,14 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  @media only screen and (max-width: 771px){
+    .main{
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+  }

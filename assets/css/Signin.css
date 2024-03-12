@@ -1,0 +1,19 @@
+*{
+   scroll-behavior: smooth;
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.main{
+    background: rgba(255, 255, 255, 0.66) !important;
+    box-shadow: 2px 2px 30px black !important;
+    border-radius: 50px;
+}
+@media only screen and (max-width: 576px){
+    .main{
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+  }

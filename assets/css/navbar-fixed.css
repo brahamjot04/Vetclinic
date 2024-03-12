@@ -1,0 +1,46 @@
+/* Show it is fixed to the top */
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.search:focus {
+  outline: none;
+  box-shadow: none;
+}
+.search {
+  background-color: transparent;
+}
+
+.search:hover {
+  background-color: transparent;
+}
+.search {
+  background-color: transparent;
+}
+.search::placeholder {
+  color: white;
+}
+.search:focus {
+  outline: none;
+  background-color: transparent;
+}
+.search:hover {
+  background-color: transparent;
+}
+.search:active {
+  box-shadow: none;
+}
+.nav2 {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .nav1 {
+    display: none;
+  }
+  .nav2 {
+    display: block;
+  }
+}
