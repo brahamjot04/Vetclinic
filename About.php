@@ -27,7 +27,7 @@
                         quae nemo. Maiores?</p>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
-                    <video src="assets/videos/big_buck_bunny_480p_30mb.mp4" controls autoplay muted loop class="img-fluid"></video>
+                    <video src="assets/videos/big_buck_bunny_480p_30mb.mp4" controls muted loop class="img-fluid"></video>
                 </div>
             </div>
         </div>
