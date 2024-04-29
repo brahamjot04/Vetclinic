@@ -6,8 +6,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $password = $_POST["password"];
 
+    include 'db_connection.php';
+
     // Store the user data in the database
-    // Your database code here
+    $sql = "INSERT INTO users (name, contact_number, email, password) VALUES ('$name', '$contactNumber', '$email', '$password')";
+    if ($mysqli->query($sql)) {
+        header("Location: success.php");
+    } else {
+        echo "<script>alert('Error: " . $sql . "<br>" . $mysqli->error . "')</script>";
+    }
 
     // Redirect to a success page
     header("Location: success.php");
@@ -75,18 +82,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <label class="ms-3" for="password">Password</label>
                             </div>
                         </div>
-                        <!-- <div class="d-flex flex-row justify-content-evenly align-items-center">
-                            <div class="w-25 border border-1 border-dark"></div>
-                            <p>OR</p>
-                            <div class="w-25 border border-1 border-dark"></div>
-                        </div>
-                        <div class="row p-3"><input type="button" value="Google" class="btn btn-success"></div>
-                        <hr> -->
+
                         <div class="row p-3"><input type="submit" value="Sign Up" class="btn btn-primary"></div>
 
                     </form>
                 </div>
-                <img class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 pt-5 pb-5 ps-0  d-md-block d-none object-fit-contain" src="assets/images/vet-clinic-png-veterinary-clinic-animal-hospital-in-sanford-lake-mary-area-432.png" alt="/">
+                <img class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 pt-5 pb-5 ps-0  d-md-block d-none object-fit-contain" src="./assets/images/vet-clinic-png-veterinary-clinic-animal-hospital-in-sanford-lake-mary-area-432.png" alt="/">
             </div>
         </div>
     </div>

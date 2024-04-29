@@ -1,0 +1,10 @@
+.main {
+  height: 75vh;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-sub {
+  width: inherit;
+  height: inherit;
+}

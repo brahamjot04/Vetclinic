@@ -19,6 +19,8 @@
     <!-- Footer CSS -->
     <link rel="stylesheet" href="assets/css/footer.css">
 
+    <link rel="stylesheet" href="./assets/css/Home.css">
+
     <!-- Custom CSS End -->
 </head>
 
@@ -31,10 +33,16 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Footer Start -->
-    <div name="footer" class="mt-5">
+    <div class="main">
         <?php
-        include 'footer.php';
+        include 'home.php';
+        ?>
+    </div>
+
+    <!-- Footer Start -->
+    <div name="footer">
+        <?php
+        // include 'footer.php';
         ?>
     </div>
     <!-- Footer End -->
