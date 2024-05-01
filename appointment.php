@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $petage = $_POST['petage'];
     $pettype = $_POST['pettype'];
     $date = $_POST['date'];
-    $time = $_POST['time'];
+    $time = $_POST['time'] . ":00";
     $message = $_POST['message'];
 
     $sql = "INSERT INTO appointment_table (name, phone, email, petname, petage, pettype, date, time, message) VALUES ('$name', '$phone', '$email', '$petname', '$petage', '$pettype', '$date', '$time', '$message')";
