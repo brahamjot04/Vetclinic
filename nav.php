@@ -53,6 +53,12 @@
               <a class="nav-link text-light" href="./Contactus.php">Contact</a>
             </li>
             <!-- Navbar Contact End -->
+
+            <!-- Navbar Appoitment Start -->
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./appointment.php">Appointment</a>
+            </li>
+            <!-- Navbar Appoitment End -->
           </ul>
 
           <!-- Search field Start -->
@@ -118,6 +124,12 @@
               <a class="nav-link text-light" href="./Contactus.php">Contact</a>
             </li>
             <!-- Navbar Contact End -->
+
+            <!-- Navbar Appoitment Start -->
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./appointment.php">Appointment</a>
+            </li>
+            <!-- Navbar Appoitment End -->
           </ul>
 
           <!-- Search field Start -->

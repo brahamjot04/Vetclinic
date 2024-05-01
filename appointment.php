@@ -1,3 +1,27 @@
+<?php
+include 'db_connection.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $petname = $_POST['petname'];
+    $petage = $_POST['petage'];
+    $pettype = $_POST['pettype'];
+    $date = $_POST['date'];
+    $time = $_POST['time'];
+    $message = $_POST['message'];
+
+    $sql = "INSERT INTO appointment_table (name, phone, email, petname, petage, pettype, date, time, message) VALUES ('$name', '$phone', '$email', '$petname', '$petage', '$pettype', '$date', '$time', '$message')";
+
+    if ($mysqli->query($sql) === true) {
+        header("Location: appointment_success.php");
+    } else {
+        echo "Error: " . $sql . "<br>" . $mysqli->error;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +48,7 @@
         <p class="display-1 text-center" style="padding-top: 90px;">
             Appointment Form
         </p>
-        <div class="container rounded-4 mt-5 mb-5 p-5 border bg-white">
+        <div class="container rounded-4 mt-5 mb-5 p-5 border bg-white shadow">
             <div class="row d-flex">
                 <form action="#" method="post">
 
@@ -118,25 +142,31 @@
                         <div class="p-4">
 
                             <div class="row">
+                                <!-- Appointment Date Start -->
                                 <div class="col-md-6">
-
                                     <div class="mb-3">
                                         <label for="date" class="form-label fw-bold">Appointment Date</label>
                                         <input type="date" class="form-control" id="date" name="date" required>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <!-- Appointment Date End -->
 
+                                <!-- Appointment Time Start -->
+                                <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="time" class="form-label fw-bold">Appointment Time</label>
                                         <input type="time" class="form-control" id="time" name="time" required>
                                     </div>
                                 </div>
+                                <!-- Appointment Time End -->
                             </div>
+
+                            <!-- Message Field Start -->
                             <div class="mb-3">
                                 <label for="message" class="form-label fw-bold">Message</label>
                                 <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
                             </div>
+                            <!-- Message Field End -->
                         </div>
                     </div>
                     <!-- Appointment Details End -->
