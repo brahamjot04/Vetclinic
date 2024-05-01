@@ -62,12 +62,12 @@
           </ul>
 
           <!-- Search field Start -->
-          <form class="d-flex border border-2 border-light rounded-pill" role="search">
+          <!-- <form class="d-flex border border-2 border-light rounded-pill" role="search">
             <input class="form-control me-2 rounded-start-pill border-0 search btn btn-outline-info bg-dark" type="search" placeholder="Search" aria-label="Search" />
             <button class="btn search btn-outline-success border-0 rounded-end-circle" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-          </form>
+          </form> -->
           <!-- Search Field End -->
 
         </div>
@@ -133,12 +133,12 @@
           </ul>
 
           <!-- Search field Start -->
-          <form class="d-flex border border-2 border-light rounded-pill" role="search">
+          <!-- <form class="d-flex border border-2 border-light rounded-pill" role="search">
             <input class="form-control me-2 rounded-start-pill border-0 text-white search btn btn-outline-info" type="search" placeholder="Search" aria-label="Search" style="color: white" />
             <button class="search btn btn-outline-success border-0 rounded-end-circle" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-          </form>
+          </form> -->
           <!-- Search Field End -->
 
         </div>

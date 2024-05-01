@@ -17,6 +17,11 @@
 </head>
 
 <body>
+  <!-- Navbar Start -->
+
+  <!-- Navbar End -->
+
+
   <div class="container-fluid m-0 p-0">
     <div class="row container-fluid main p-0 m-0">
       <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sx-12 mt-5 pt-5 ps-5 text-light mb-auto">
@@ -39,75 +44,78 @@
         <p class="fs-2 fw-bold pe-5">Services</p>
         <hr class="w-100" style="border: 2px solid black; background-color: black" />
       </div>
-      <div class="w-100 row">
-        <div class="card m-5 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="">
+
+        <div class="w-100 row d-flex justify-content-center">
+          <div class="m-3 card col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-12">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-        </div>
-        <div class="card m-5 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card m-3 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-12">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-        </div>
-        <div class="card m-5 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card m-3 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-12">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-        </div>
-        <div class="card m-5 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card m-3 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-12">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-        </div>
-        <div class="card m-5 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card m-3 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-12">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-        </div>
-        <div class="card m-5 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card m-3 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-12">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-        </div>
-        <div class="card m-5 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card m-3 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-12">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
         </div>
       </div>
