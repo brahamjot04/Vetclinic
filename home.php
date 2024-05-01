@@ -27,9 +27,11 @@
         <img class="w-100 object-fit-contain" src="./assets/images/book-online-medical-appointment-1946927-1651972.png" />
       </div>
       <div class="main-sub d-flex align-items-center justify-content-center position-absolute z-0">
-        <button type="button" class="btn btn-primary btn-lg shadow-lg">
-          APPOINTMENT
-        </button>
+        <a href="./appointment.php" class="text-decoration-none">
+          <button type="button" class="btn btn-primary btn-lg shadow-lg">
+            APPOINTMENT
+          </button>
+        </a>
       </div>
     </div>
     <div class="row container-fluid p-5 fe">
