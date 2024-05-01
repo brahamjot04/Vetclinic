@@ -46,7 +46,7 @@
       </div>
       <div class="">
 
-        <div class="w-100 row d-flex justify-content-center">
+        <div class="w-100 row d-flex justify-content-evenly">
           <div class="m-3 card col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-12">
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
@@ -150,7 +150,7 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-dark border-bottom border-body p-5 data-bs-theme=" dark">
+  <div class="container-fluid bg-dark border-bottom border-body p-5" data-bs-theme="dark">
     <div class="row">
       <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 pt-5 pb-5 ps-md-3 pe-md-3 ps-sm-2 pe-sm-2 col-sm-6 d-flex flex-column align-items-center justify-content-center">
         <div class="text-center text-light fs-3 fw-semibold mb-3  ">About</div>
