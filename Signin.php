@@ -50,8 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: dashboard.php");
             exit;
         } else {
-            $password_err = "The password you entered is incorrect.";
-            $email_err = "The email you entered is incorrect.";
+            $password_err = "The email and password you entered does not match.";
         }
     }
 

@@ -171,8 +171,8 @@
         </div>
       </div>
       <div class="col-md-4 pt-5 pb-5 ps-md-3 pe-md-3 ps-sm-2 pe-sm-2 col-sm-12 d-flex align-items-center justify-content-center ">
-        <div class="text-center text-light fs-3 fw-semibold d-flex justify-content-center align-items-center w-100 ">
-          <iframe class="object-fit-cover border rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6849.855688153772!2d75.8500398695469!3d30.86069513622144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a828f09011b15%3A0xbf3f5b51dcc81b12!2sGuru%20Nanak%20Dev%20Engineering%20College!5e0!3m2!1sen!2sin!4v1708699402091!5m2!1sen!2sin" allowfullscreen="" loading="lazy" style="width: inherit;" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="d-flex justify-content-center align-items-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6849.663639880155!2d75.8555161!3d30.8633833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a828f09011b15%3A0xbf3f5b51dcc81b12!2sGuru%20Nanak%20Dev%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714581660013!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3"></iframe>
         </div>
       </div>
     </div>
@@ -197,7 +197,7 @@
       </div>
       <div class="col-12 text-center">
 
-        <div class="text-light ms-2">&copy; <span id="year"></span> All copyrights reserved by VetClinic. </div>
+        <div class="text-light ms-2">&copy; <span id="year"></span> All copyrights reserved by <a href="./" class="text-decoration-none text-white">VetClinic</a>. </div>
       </div>
     </div>
   </div>
