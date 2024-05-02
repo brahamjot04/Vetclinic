@@ -17,6 +17,9 @@ $result = $mysqli->query($sql);
 $sql1 = "SELECT * FROM completed_appointment_table";
 $result1 = $mysqli->query($sql1);
 
+$sql2 = "SELECT * FROM contactus";
+$result2 = $mysqli->query($sql2);
+
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +29,7 @@ $result1 = $mysqli->query($sql1);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="./assets/css/dashboard.css" />
   <title>Admin Panel</title>
 </head>
 
@@ -41,115 +44,165 @@ $result1 = $mysqli->query($sql1);
       </div>
     </div>
     <div class="col-12 border border-3 border-black mt-3 mt-md-0"></div>
+    <div class="container">
 
-    <!-- Pending Appointments Start -->
-    <div class="row mt-5">
-      <div class="col-12 m-auto row">
+      <!-- Pending Appointments Start -->
+      <div class="row mt-5">
+        <div class="col-md-8">
 
-        <div class="col-12 rounded border-black border m-auto mt-4">
-          <div class="col-12 h2 p-3 fw-bold text-center text-md-start">Pending Appointments</div>
-          <div class="table-responsive">
 
-            <table class="table table-striped table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">S. No.</th>
-                  <th scope="col">Owner Name</th>
-                  <th scope="col">Owner Contact</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Pet Name</th>
-                  <th scope="col">Pet Age</th>
-                  <th scope="col">Pet Type</th>
-                  <th scope="col">Appointment Date</th>
-                  <th scope="col">Appointment Time</th>
-                  <th scope="col">Message</th>
-                  <th scope="col">Complete</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php
-                while ($rows = $result->fetch_assoc()) {
-                ?>
-                  <tr>
-                    <th scope="row"><?php echo $rows['id']; ?></td>
-                    <td><?php echo $rows['name']; ?></td>
-                    <td><?php echo $rows['phone']; ?></td>
-                    <td><?php echo $rows['email']; ?></td>
-                    <td><?php echo $rows['petname']; ?></td>
-                    <td><?php echo $rows['petage']; ?></td>
-                    <td><?php echo $rows['pettype']; ?></td>
-                    <td><?php echo $rows['date']; ?></td>
-                    <td><?php echo $rows['time']; ?></td>
-                    <td><?php echo $rows['message']; ?></td>
-                    <td>
-                      <form action="#" method="post">
-                        <input type="hidden" name="id" value="<?php echo $rows['id']; ?>" />
-                        <input class="btn btn-success" type="submit" value="Complete" name="complete" />
-                      </form>
-                  </tr>
-                <?php
-                }
-                ?>
-              </tbody>
-            </table>
+          <div class="m-auto">
+
+            <div class="rounded border-black border m-auto mt-4">
+              <div class="h2 p-3 fw-bold text-center text-md-start">Pending Appointments</div>
+              <div class="table-responsive">
+
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">S. No.</th>
+                      <th scope="col">Owner Name</th>
+                      <th scope="col">Owner Contact</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Pet Name</th>
+                      <th scope="col">Pet Age</th>
+                      <th scope="col">Pet Type</th>
+                      <th scope="col">Appointment Date</th>
+                      <th scope="col">Appointment Time</th>
+                      <th scope="col">Message</th>
+                      <th scope="col">Complete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php
+                    while ($rows = $result->fetch_assoc()) {
+                    ?>
+                      <tr>
+                        <th scope="row"><?php echo $rows['id']; ?></td>
+                        <td><?php echo $rows['name']; ?></td>
+                        <td><?php echo $rows['phone']; ?></td>
+                        <td><?php echo $rows['email']; ?></td>
+                        <td><?php echo $rows['petname']; ?></td>
+                        <td><?php echo $rows['petage']; ?></td>
+                        <td><?php echo $rows['pettype']; ?></td>
+                        <td><?php echo $rows['date']; ?></td>
+                        <td><?php echo $rows['time']; ?></td>
+                        <td><?php echo $rows['message']; ?></td>
+                        <td>
+                          <form action="#" method="post">
+                            <input type="hidden" name="id" value="<?php echo $rows['id']; ?>" />
+                            <input class="btn btn-success" type="submit" value="Complete" name="complete" />
+                          </form>
+                      </tr>
+                    <?php
+                    }
+                    ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
           </div>
+
+          <!-- Pending Appointments End -->
+
+          <!-- Completed Appointments Start -->
+          <div class="mt-5">
+            <div class="m-auto">
+
+              <div class="rounded border-black border m-auto mt-4">
+                <div class="h2 p-3 fw-bold text-center text-md-start">Completed Appointments</div>
+                <div class="table-responsive">
+
+                  <table class="table table-striped table-hover overflow-auto">
+                    <thead>
+                      <tr>
+                        <th scope="col">S. No.</th>
+                        <th scope="col">Owner Name</th>
+                        <th scope="col">Owner Contact</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Pet Name</th>
+                        <th scope="col">Pet Age</th>
+                        <th scope="col">Pet Type</th>
+                        <th scope="col">Appointment Date</th>
+                        <th scope="col">Appointment Time</th>
+                        <th scope="col">Message</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      while ($rows1 = $result1->fetch_assoc()) {
+                      ?>
+                        <tr>
+                          <th scope="row"><?php echo $rows1['id']; ?></td>
+                          <td><?php echo $rows1['name']; ?></td>
+                          <td><?php echo $rows1['phone']; ?></td>
+                          <td><?php echo $rows1['email']; ?></td>
+                          <td><?php echo $rows1['petname']; ?></td>
+                          <td><?php echo $rows1['petage']; ?></td>
+                          <td><?php echo $rows1['pettype']; ?></td>
+                          <td><?php echo $rows1['date']; ?></td>
+                          <td><?php echo $rows1['time']; ?></td>
+                          <td><?php echo $rows1['message']; ?></td>
+                        </tr>
+                      <?php
+                      }
+                      ?>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Completed Appointments End -->
         </div>
 
-      </div>
-    </div>
-    <!-- Pending Appointments End -->
+        <!-- Contact Responses Start -->
+        <div class="col-md-4 inh">
+          <div class="col-12 inh">
 
-    <!-- Completed Appointments Start -->
-    <div class="row mt-5">
-      <div class="col-12 m-auto row">
+            <div class="m-auto">
 
-        <div class="col-12 rounded border-black border m-auto mt-4">
-          <div class="col-12 h2 p-3 fw-bold text-center text-md-start">Completed Appointments</div>
-          <div class="table-responsive">
+              <div class="rounded border-black border m-auto mt-4">
+                <div class="h2 p-3 fw-bold text-center text-md-start">Contact Form Responses</div>
+                <div class="table-responsive">
 
-            <table class="table table-striped table-hover overflow-auto">
-              <thead>
-                <tr>
-                  <th scope="col">S. No.</th>
-                  <th scope="col">Owner Name</th>
-                  <th scope="col">Owner Contact</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Pet Name</th>
-                  <th scope="col">Pet Age</th>
-                  <th scope="col">Pet Type</th>
-                  <th scope="col">Appointment Date</th>
-                  <th scope="col">Appointment Time</th>
-                  <th scope="col">Message</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php
-                while ($rows1 = $result1->fetch_assoc()) {
-                ?>
-                  <tr>
-                    <th scope="row"><?php echo $rows1['id']; ?></td>
-                    <td><?php echo $rows1['name']; ?></td>
-                    <td><?php echo $rows1['phone']; ?></td>
-                    <td><?php echo $rows1['email']; ?></td>
-                    <td><?php echo $rows1['petname']; ?></td>
-                    <td><?php echo $rows1['petage']; ?></td>
-                    <td><?php echo $rows1['pettype']; ?></td>
-                    <td><?php echo $rows1['date']; ?></td>
-                    <td><?php echo $rows1['time']; ?></td>
-                    <td><?php echo $rows1['message']; ?></td>
-                  </tr>
-                <?php
-                }
-                ?>
-              </tbody>
-            </table>
+                  <table class="table table-striped table-hover overflow-auto">
+                    <thead>
+                      <tr>
+                        <th scope="col">S. No.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Message</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      while ($rows2 = $result2->fetch_assoc()) {
+                      ?>
+                        <tr>
+                          <th scope="row"><?php echo $rows2['id']; ?></td>
+                          <td><?php echo $rows2['name']; ?></td>
+                          <td><?php echo $rows2['email']; ?></td>
+                          <td><?php echo $rows2['message']; ?></td>
+                        </tr>
+                      <?php
+                      }
+                      ?>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
-    </div>
-    <!-- Completed Appointments End -->
 
+
+      <!-- Contact Responses End -->
+
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
